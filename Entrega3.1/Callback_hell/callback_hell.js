@@ -16,7 +16,7 @@ const reverseText = str =>
   .join("");
 
 // Read and reverse contents of text files in a directory
-readdir(inbox, (error, files) => {
+/* readdir(inbox, (error, files) => {
   if (error) return console.log("Error: Folder inaccessible");
   files.forEach(file => {
     readFile(join(inbox, file), "utf8", (error, data) => {
@@ -27,4 +27,25 @@ readdir(inbox, (error, files) => {
       });
     });
   });
-});
+}); */
+
+readdir(inbox, checkFolder);
+
+const checkFolder = (error, files) => {
+  if (error) return console.log("Error: Folder inaccessible");
+  files.forEach(readingFile)
+}
+
+const readingFile = file => {
+  readFile (join(inbox, file), "utf8", writingFile);
+  
+const writingFile = (error, data) => {
+  if (error) return console.log("Error: File error");
+  writeFile(join(outbox, file), reverseText(data), filterError);
+}
+
+const filterError = error => {
+  if (error) return console.log("Error: File could not be saved!");
+  console.log(`${file} was successfully saved in the outbox!`);
+  }
+}

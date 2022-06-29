@@ -8,29 +8,19 @@ class Marcador {
         }
         Marcador.instance = this;
         return this;
-        }
-        reloadMarcador (){
-            this.jugadors = [];
-            this.puntuacions = [];
-        }
-        mostrarMarcador (){
-            let marcador = "";
-            for (let i = 0; i < this.jugadors.length; i++) {
-                marcador += this.jugadors[i] + ": " + this.puntuacions[i] + "\n";
+    }
+    mostrarPunts(jugador) {
+        console.log(`${jugador.nom} te ${jugador.punts} punts.`);
+    }
+    jugadorMesPunts() {
+        let jugadorMesPunts = this.jugadors[0];
+        for (let i = 0; i < this.jugadors.length; i++) {
+            if (jugadorMesPunts.punts < this.jugadors[i].punts) {
+                jugadorMesPunts = this.jugadors[i];
             }
-            return marcador;
+            return console.log(`El jugador ${jugadorMesPunts} és el ganyador.`);
         }
-        mostrarGuanyador (){
-            let ganador = "";
-            let max = 0;
-            for (let i = 0; i < this.puntuacions.length; i++) {
-                if (this.puntuacions[i] > max) {
-                    max = this.puntuacions[i];
-                    ganador = this.jugadors[i];
-                }
-            }
-            return console.log(ganador, max);
-        }
+    }
 }
 
-module.exports = Marcador;
+module.exports = Marcador; 

@@ -1,6 +1,5 @@
 const Jugador =  require("./Jugador");
 const Joc =  require("./Joc");
-const Marcador = require("./Marcador")
 
 let jugador1 = new Jugador('barbara');
 let jugador2 = new Jugador('magi');
@@ -38,8 +37,6 @@ joc.marcador.mostrarPunts(jugador4);
 //TODO jugador ganyador
 
 joc.jugadorGuanyador();
-
-console.log(`El jugador ${joc.marcador.guanyador} ha guanyat el joc ${joc.nom} amb ${joc.marcador.puntuacions} punts.`);
 
 
 

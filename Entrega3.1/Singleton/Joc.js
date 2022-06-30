@@ -29,6 +29,8 @@ class Joc{
         }
         this.marcador.puntuacions = guanyador;
         this.marcador.guanyador = nomGuanyador;
+        
+        console.log(`El jugador ${this.marcador.guanyador} ha guanyat el joc ${this.nom} amb ${this.marcador.puntuacions} punts.`);
     }
 }
 

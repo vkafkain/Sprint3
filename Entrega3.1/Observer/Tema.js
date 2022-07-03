@@ -1,21 +1,32 @@
-const Usuari = require('./Usuari')
+const EventEmitter = require("events");
+const eventEmitter = new EventEmitter();
 
-class Tema {
+class Tema extends EventEmitter {
     constructor(nom){
         this.nom = nom;
         this.usuaris = [];
     }
 
-    suscribe(element) {
-        this.usuaris.push(element);
+    suscribe(usuari) {
+        this.usuaris.push(usuari);
+        this.emit("usuariSuscrit", usuari);
+        return this;
     }
 
-    unsuscribe(element) {
-        this.usuaris = this.usuaris.filter(suscriber => suscriber !== element);
+    unsuscribe(usuari) {
+        const unsuscribeUsuari = this.usuaris.indexOf(usuari);
+        if(unsuscribeUsuari !== -1) {
+            this.usuaris.splice(unsuscribeUsuari, 1);
+            this.emit('usuariUnsuscribe', usuari);
+        } else {
+            this.emit('errorUnsuscribeUsuari', usuari);
+        }
+        return this;
     }
 
     notificacioSuscriptors(missatge) {
         this.ususaris.forEach(usuaris => usuaris(missatge));
+
     }
 }
 

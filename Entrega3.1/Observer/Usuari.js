@@ -3,7 +3,6 @@ class Usuari {
         this.nom = nom;
         this.cognom = cognom;
     }
-
     
 };
 

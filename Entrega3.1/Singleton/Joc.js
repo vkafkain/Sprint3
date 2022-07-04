@@ -5,7 +5,8 @@ class Joc{
         this.nom = nom;
         this.jugadors = [];
         this.marcador = new Marcador();
-    }
+        
+    };
 
     addJugador(jugador) {
         this.jugadors.push(jugador);
@@ -13,11 +14,12 @@ class Joc{
     
     addPoints(jugador, punts) {
         jugador.punts = jugador.punts + punts;
-    }
+    };
     
     removePoints(jugador, punts) {
         jugador.punts = jugador.punts - punts;
-    }
+    };
+
     jugadorGuanyador() {
         let guanyador = 0;
         let nomGuanyador = null;
@@ -32,6 +34,6 @@ class Joc{
         
         console.log(`El jugador ${this.marcador.guanyador} ha guanyat el joc ${this.nom} amb ${this.marcador.puntuacions} punts.`);
     }
-}
+};
 
 module.exports = Joc;

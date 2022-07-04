@@ -10,4 +10,4 @@ El pas següent és executar per terminal el següent comandament:
 
     node app.js
 
-[^1]: [enllaç_a_events](https://www.npmjs.com/package/events)
+[^1]: [Enllaç_a_events](https://www.npmjs.com/package/events)

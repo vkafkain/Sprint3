@@ -7,7 +7,6 @@ let jugador3 = new Jugador('dwarfguin');
 let jugador4 = new Jugador('chaman');
 
 const joc = new Joc('diabloII');
-const joc2 = new Joc('diabloIII');
 
 joc.addJugador(jugador1);
 joc.addJugador(jugador2);

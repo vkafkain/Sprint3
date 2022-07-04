@@ -24,9 +24,8 @@ class Tema extends EventEmitter {
         return this;
     }
 
-    notificacioSuscriptors(missatge) {
+    missatgeTema(missatge) {
         this.ususaris.forEach(usuaris => usuaris(missatge));
-
     }
 }
 

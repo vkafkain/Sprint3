@@ -5,9 +5,10 @@ class Tema extends EventEmitter {
     constructor(nom){
         super();
         this.nom = nom;
+        this.usuaris = [];
     }
     suscribe(usuari){
-        this.nom.push(usuari);
+        this.usuaris.push(usuari);
     }
 
     missatgeRebut(missatge){

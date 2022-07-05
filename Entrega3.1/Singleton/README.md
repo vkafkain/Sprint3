@@ -2,7 +2,7 @@
 
 ## Instruccions d'ús: 🧙‍♂️
 
-Per executar el programa em de ficar el següent commandament per consola:
+Per executar el programa introduirem el següent commandament per terminal:
 
     node app.js
 

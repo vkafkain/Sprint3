@@ -1,5 +1,8 @@
 
 
 class Middleware {
-    constructor()
+    constructor(){
+        this.middlewares = [];
+    }
+    
 }

@@ -11,9 +11,13 @@ class Tema extends EventEmitter {
         this.usuaris.push(usuari);
     }
 
-    missatgeRebut(missatge){
+    missatgeNou(missatge){
         this.emit(this.nom, missatge);
-    }
+        this.usuaris.forEach(usuari => {
+            eventEmitter.emit(usuari.nom, missatge);
+            console.log(`${usuari.nom}:te un nou missatge al tema ${this.nom}`)
+        });
+    } 
 }
-
+    
 module.exports = Tema;

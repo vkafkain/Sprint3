@@ -4,7 +4,8 @@ class Usuari {
     }
     notificar(tema, missatge) {
         console.log(`${this.nom}: ${missatge} al tema ${tema.nom}`);
-        tema.missatgeRebut
+        tema.missatgeNou(missatge);
     }
 };
+
 module.exports = Usuari;

@@ -2,7 +2,7 @@
 
 ## Instruccions d'ús: 🧙‍♂️
 
-Primer de tot em de instal·lar els node_modules en concret events[^1], amb aquest pas instalariem el modul que farem servir en el exercici, introduirem el següent comandament per terminal:
+Primer de tot instal·larem els node_modules en concret events[^1], amb aquest pas instal·laríem el mòdul que farem servir en l'exercici, introduirem el següent comandament per terminal:
 
     npm install events
 

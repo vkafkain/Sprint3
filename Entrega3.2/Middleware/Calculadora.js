@@ -1,21 +1,14 @@
-let fs = require('fs');
-
 
 class Calculadora {
-    constructor(num1, num2) {
-        this.num1 = num1;
-        this.num2 = num2;
+
+    suma({num1,num2}) {
+        return num1 + num2;
     }
-    sumar() {
-        return this.num1 + this.num2;
+    resta({num1,num2}) {
+        return num1 - num2;
     }
-    restar() {
-        return this.num1 - this.num2;
-    }
-    multiplicar() {
-        return this.num1 * this.num2;
-    }
-    dividir() {
-        return this.num1 / this.num2;
+    multiplicacio({num1,num2}) {
+        return num1 * num2;
     }
 }
+module.exports = Calculadora;

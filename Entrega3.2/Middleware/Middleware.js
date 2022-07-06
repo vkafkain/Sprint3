@@ -7,6 +7,7 @@ class Middleware {
     use(fn){
         this.middlewares.push(fn);
     }
+    
 }
 
 module.exports = Middleware;

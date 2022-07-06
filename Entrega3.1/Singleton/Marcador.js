@@ -1,7 +1,7 @@
 class Marcador {
     constructor() {
-        this.puntuacions = [];
         this.jugadors = [];
+        this.puntuacions = [];
         if (typeof Marcador.instance === 'object') {
             return Marcador.instance;
         }

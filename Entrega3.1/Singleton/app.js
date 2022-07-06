@@ -13,14 +13,10 @@ joc.addJugador(jugador2);
 joc.addJugador(jugador3);
 joc.addJugador(jugador4);
 
-joc2.addJugador(jugador1);
-
 joc.addPoints(jugador1, 10);
 joc.addPoints(jugador2, 55);
 joc.addPoints(jugador3, 31);
 joc.addPoints(jugador4, 94);
-
-joc2.addPoints(jugador1, 10)
 
 joc.removePoints(jugador1, 4);
 joc.removePoints(jugador2, 2);
@@ -31,8 +27,6 @@ joc.marcador.mostrarPunts(jugador1);
 joc.marcador.mostrarPunts(jugador2);
 joc.marcador.mostrarPunts(jugador3);
 joc.marcador.mostrarPunts(jugador4);
-
-joc2.marcador.mostrarPunts(jugador1);
 
 joc.jugadorGuanyador();
 

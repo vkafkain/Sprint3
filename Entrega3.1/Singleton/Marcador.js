@@ -10,6 +10,6 @@ class Marcador {
     }
     mostrarPunts(jugador) {
         console.log(`${jugador.nom} te ${jugador.punts} punts.`);
-    }      
+    }
 }
 module.exports = Marcador; 

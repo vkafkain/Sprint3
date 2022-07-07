@@ -1,19 +1,29 @@
+
 const {
   readdir,
   readFile,
-  writeFile
+  writeFile,
 } = require("fs");
 const {
   join
 } = require("path");
+
+const fs = require("fs");
+
 const inbox = join(__dirname, "inbox");
 const outbox = join(__dirname, "outbox");
+
+const ruta = './outbox';
 
 const reverseText = str =>
   str
   .split("")
   .reverse()
   .join("");
+
+  if (!fs.existsSync(ruta)){
+      fs.mkdirSync(ruta);
+  }
 
 // Read and reverse contents of text files in a directory
 

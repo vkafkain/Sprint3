@@ -1,12 +1,13 @@
 
-
 class Middleware {
     constructor(data){
-        this.middlewares = [];
+        this.middlewares = [];   
     }
     use(fn){
         this.middlewares.push(fn);
-    }
+        }
+        
+    
 }
 
 module.exports = Middleware;

@@ -1,15 +1,17 @@
+
 class Marcador {
-    constructor() {
-        this.jugadors = [];
-        this.puntuacions = [];
+    constructor(jocs, jugador) {
+        this.jocs = jocs;
+        this.jugadors = jugador;
         if (typeof Marcador.instance === 'object') {
             return Marcador.instance;
         }
         Marcador.instance = this;
         return this;
     }
-    mostrarPunts(jugador) {
-        console.log(`${jugador.nom} te ${jugador.punts} punts.`);
+    mostrarPunts(jugador, joc) {
+        
+        console.log(`${jugador.nom} te ${jugador.punts} punts en el joc ${joc}`);
     }
 }
 module.exports = Marcador; 

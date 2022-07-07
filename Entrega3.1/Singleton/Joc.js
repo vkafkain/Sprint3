@@ -6,6 +6,7 @@ class Joc{
         this.jugadors = [];
         this.marcador = new Marcador();
         
+        
     };
 
     addJugador(jugador) {

@@ -4,13 +4,18 @@ const Jugador = require('./Jugador');
 class Joc{
     constructor(nom) {
         this.nom = nom;
-        this.marcador = new Marcador();   
+        this.marcador = new Marcador(); 
     };
-
+    
     afegirJoc(nom) {
-        this.marcador.jocs = nom;
+        this.marcador.slot.push(nom);
     }
 
+    afegirJugador(jugador) {
+        this.marcador.slot.push({jugador:jugador.nom, punts: 0});
+    }
+}
+/* 
     afegirJugador(jugador) {
         this.marcador.jocs.jugador = jugador;
     };
@@ -18,7 +23,7 @@ class Joc{
     addPoints(punts) {
         this.marcador.jocs.jugador.punts = punts;
     };
-/*    
+
     removePoints(jugador, punts) {
         jugador.punts = jugador.punts - punts;
     };
@@ -36,7 +41,7 @@ class Joc{
         this.marcador.guanyador = nomGuanyador;
         
         console.log(`El jugador ${this.marcador.guanyador} ha guanyat el joc ${this.nom} amb ${this.marcador.puntuacions} punts.`);
-    } */
+    }
 };
-
+*/
 module.exports = Joc;

@@ -6,4 +6,17 @@ Per executar el programa introduirem el següent comandament per terminal:
 
     node app.js
 
-Veuràs que es mostra els punts de cada jugador i el jugador amb més punts. Tinc una altra versió en la que estic treballant per poder crear més de un joc.
+Aquesta és la versió final del exercici.
+
+Patch notes:
+
+- Ja es pot crear més d'un joc.
+- Els jugadors ja no comperteixen puntuació entre jocs.
+- Canvis minims en la estructura dels models de les clases [^1].
+- 
+
+
+
+
+
+[^1]: Eliminem la propietat nom de la clase Joc i el array de jugadors a la clase Marcador.

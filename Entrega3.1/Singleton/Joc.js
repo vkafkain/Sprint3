@@ -7,40 +7,40 @@ class Joc{
     };
     
     afegirJoc(nom) {
-        this.marcador.slot.push(nom);
+        this.marcador.slot[nom] = {};
     }
 
-    afegirJugador(jugador) {
-        this.marcador.slot.push({jugador:jugador.nom, punts: 0});
+    afegirJugador(joc, jugador) {
+        this.marcador.slot[joc][jugador.nom] = 0;
     }
-}
-/* 
-    afegirJugador(jugador) {
-        this.marcador.jocs.jugador = jugador;
-    };
 
-    addPoints(punts) {
-        this.marcador.jocs.jugador.punts = punts;
-    };
+    afegirPunts(joc, jugador, punts) {
+        this.marcador.slot[joc][jugador.nom] += punts;
+    }
 
-    removePoints(jugador, punts) {
-        jugador.punts = jugador.punts - punts;
-    };
+    treurePunts(joc, jugador, punts) {
+        this.marcador.slot[joc][jugador.nom] -= punts;
+    }
 
-    jugadorGuanyador() {
-        let guanyador = 0;
-        let nomGuanyador = null;
-        for (let i = 0; i < this.jugadors.length; i++) {
-            if (this.jugadors[i].punts > guanyador) {
-                guanyador = this.jugadors[i].punts;
-                nomGuanyador = this.jugadors[i].nom;
+    mostrarPunts(joc) {
+        for (let jugador in this.marcador.slot[joc]) {
+            console.log(`${jugador} te ${this.marcador.slot[joc][jugador]} punts en el joc ${joc}`);
+        }
+    }
+
+    mostrarGuanyador(joc) {
+        let ganador = '';
+        let punts = 0;
+        for (let jugador in this.marcador.slot[joc]) {
+            if (this.marcador.slot[joc][jugador] > punts) {
+                ganador = jugador;
+                punts = this.marcador.slot[joc][jugador];
             }
         }
-        this.marcador.puntuacions = guanyador;
-        this.marcador.guanyador = nomGuanyador;
-        
-        console.log(`El jugador ${this.marcador.guanyador} ha guanyat el joc ${this.nom} amb ${this.marcador.puntuacions} punts.`);
+        console.log(`El ganyador del joc ${joc} és ${ganador}`);
     }
-};
-*/
+    mostrarTaula(joc) {
+        console.table(this.marcador.slot[joc]);
+    }
+}
 module.exports = Joc;

@@ -15,6 +15,7 @@ Patch notes:
 - Canvis mínims en l'estructura dels models de les classes [^1].
 - Reescrivim els mètodes pel nou model d'estructura.
 - Afegim colors al console.log
-- Afegim emojis, es comporta d'una manera una mica 'meh' amb els emojis..
+- Afegim emojis[^2]: 
 
 [^1]: Eliminem la propietat 'nom' de la classe Joc i l'array de jugadors a la classe Marcador.
+[^2]: Si hagués algun tipus d'error o mal funcionament s'haurien de retirar els emojis, a mi em funciona correctament. 

@@ -2,8 +2,7 @@ const Marcador = require('./Marcador');
 const Jugador = require('./Jugador');
 
 class Joc{
-    constructor(nom) {
-        this.nom = nom;
+    constructor() {
         this.marcador = new Marcador(); 
     };
     

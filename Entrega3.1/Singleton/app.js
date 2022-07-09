@@ -13,7 +13,7 @@ joc.afegirJoc('diabloII');
 
 joc.afegirJugador(jugador1);
 
-console.log(Marcador.instance.slot);
+console.log(joc.marcador.slot);
 
 /* joc.afegirJugador(jugador2);
 joc.afegirJugador(jugador3);

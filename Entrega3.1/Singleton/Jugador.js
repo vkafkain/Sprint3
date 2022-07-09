@@ -3,4 +3,5 @@ class Jugador {
         this.nom = nom;    
     }
 };
+
 module.exports = Jugador;

@@ -39,8 +39,5 @@ class Joc{
         }
         console.log(`El ganyador del joc ${joc} és ${ganador}`);
     }
-    mostrarTaula(joc) {
-        console.table(this.marcador.slot[joc]);
-    }
 }
 module.exports = Joc;

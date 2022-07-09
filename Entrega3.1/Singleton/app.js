@@ -1,11 +1,10 @@
 const Jugador =  require("./Jugador");
 const Joc =  require("./Joc");
-const Marcador = require("./Marcador");
 
-let jugador1 = new Jugador('barbara');
-let jugador2 = new Jugador('magi');
-let jugador3 = new Jugador('dwarfguin');
-let jugador4 = new Jugador('chaman');
+let jugador1 = new Jugador('Barbara');
+let jugador2 = new Jugador('Magi');
+let jugador3 = new Jugador('Dwarfguin');
+let jugador4 = new Jugador('Chaman');
 
 const joc = new Joc();
 
@@ -53,7 +52,7 @@ joc.treurePunts('diabloIII', jugador2, 2);
 joc.treurePunts('diabloIII', jugador3, 3);
 joc.treurePunts('diabloIII', jugador4, 4);
 
-joc.treurePunts('diabloIV', jugador1, 5);
+joc.treurePunts('diabloIV', jugador1, 95);
 joc.treurePunts('diabloIV', jugador2, 6);
 joc.treurePunts('diabloIV', jugador3, 7);
 joc.treurePunts('diabloIV', jugador4, 8);

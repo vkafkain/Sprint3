@@ -1,4 +1,3 @@
-
 class Marcador {
     constructor() {
         this.slot = [];

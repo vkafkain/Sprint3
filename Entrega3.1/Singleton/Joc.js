@@ -28,15 +28,15 @@ class Joc{
     }
 
     mostrarGuanyador(joc) {
-        let ganador = '';
+        let guanyador = '';
         let punts = 0;
         for (let jugador in this.marcador.slot[joc]) {
             if (this.marcador.slot[joc][jugador] > punts) {
-                ganador = jugador;
+                guanyador = jugador;
                 punts = this.marcador.slot[joc][jugador];
             }
         }
-        console.log(`El ganyador del joc ${joc} és el/la ${ganador} amb ${punts} punts.`);
+        console.log(`El guanyador del joc ${joc} és la ${guanyador} amb ${punts} punts.`);
     }
 }
 module.exports = Joc;

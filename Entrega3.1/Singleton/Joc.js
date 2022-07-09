@@ -36,7 +36,7 @@ class Joc{
                 punts = this.marcador.slot[joc][jugador];
             }
         }
-        console.log(`El ganyador del joc ${joc} és ${ganador}`);
+        console.log(`El ganyador del joc ${joc} és el/la ${ganador} amb ${punts} punts.`);
     }
 }
 module.exports = Joc;

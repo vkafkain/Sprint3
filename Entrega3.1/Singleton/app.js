@@ -58,22 +58,22 @@ joc.treurePunts('diabloIV', jugador3, 7);
 joc.treurePunts('diabloIV', jugador4, 8);
 
 
-console.log(`********PUNTUACIONS DIABLO II********`);
+console.log('\x1b[31m ********PUNTUACIONS DIABLO II******** \x1b[0m');
 joc.mostrarPunts('diabloII');
 
-console.log(`********PUNTUACIONS DIABLO III********`);
+console.log('\x1b[34m ********PUNTUACIONS DIABLO III******** \x1b[0m');
 joc.mostrarPunts('diabloIII');
 
-console.log(`********PUNTUACIONS DIABLO IV********`);
+console.log('\x1b[36m ********PUNTUACIONS DIABLO IV******** \x1b[0m');
 joc.mostrarPunts('diabloIV');
 
-console.log(`********GANYADOR DIABLO II********`);
+console.log('\x1b[31m ********GUANYADOR DIABLO II******** \x1b[0m');
 joc.mostrarGuanyador('diabloII');
 
-console.log(`********GANYADOR DIABLO III********`);
+console.log('\x1b[34m ********GUANYADOR DIABLO III******** \x1b[0m');
 joc.mostrarGuanyador('diabloIII');
 
-console.log(`********GANYADOR DIABLO IV********`);
+console.log('\x1b[36m ********GUANYADOR DIABLO IV******** \x1b[0m');
 joc.mostrarGuanyador('diabloIV');
 
 

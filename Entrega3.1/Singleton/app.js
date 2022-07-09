@@ -4,7 +4,7 @@ const Joc =  require("./Joc");
 let jugador1 = new Jugador('Barbara💃');
 let jugador2 = new Jugador('Magic🧙‍♂️');
 let jugador3 = new Jugador('Dwarfguin🦹‍♂️');
-let jugador4 = new Jugador('Chaman🧛‍♀️');
+let jugador4 = new Jugador('Vampir🧛‍♀️');
 
 const joc = new Joc();
 

@@ -12,6 +12,7 @@ Actualitzacions introduides:
 
 - En la nova versió la carpeta outbox es crea al introduir el comandament node callback_hell.js per terminal.
 
+
     const ruta = './outbox';
     if (!fs.existsSync(ruta)){
     fs.mkdirSync(ruta);

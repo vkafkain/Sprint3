@@ -13,7 +13,7 @@ const fs = require("fs");
 const inbox = join(__dirname, "inbox");
 const outbox = join(__dirname, "outbox");
 
-const ruta = './outbox';
+
 
 const reverseText = str =>
   str
@@ -21,10 +21,10 @@ const reverseText = str =>
   .reverse()
   .join("");
 
-  if (!fs.existsSync(ruta)){
-      fs.mkdirSync(ruta);
-  }
+const ruta = './outbox';
 
+!fs.existsSync(ruta) ? fs.mkdirSync(ruta): console.log("Ja existeix la carpeta amb aquest nom"); 
+  
 // Read and reverse contents of text files in a directory
 
 const iterationFiles = (error, files) => {

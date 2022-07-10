@@ -4,7 +4,7 @@
 
 Per executar el programa introduirem el següent comandament per terminal:
 
-node app.js
+    node app.js
 
 Aquesta és la versió final de l'exercici.
 

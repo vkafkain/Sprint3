@@ -8,7 +8,7 @@ node app.js
 
 Aquesta és la versió final de l'exercici.
 
-Patch notes:
+## Actualitzacions: ✅
 
 - Ja es pot crear més d'un joc.
 - Els jugadors ja no comparteixen puntuació entre jocs.
@@ -18,4 +18,4 @@ Patch notes:
 - Afegim emojis[^2]: 
 
 [^1]: Eliminem la propietat 'nom' de la classe Joc i l'array de jugadors a la classe Marcador.
-[^2]: Si hagués algun tipus d'error o mal funcionament s'haurien de retirar els emojis, a mi em funciona correctament. 
+[^2]: Si hi hagués algun tipus d'error o mal funcionament s'haurien de retirar els emojis, a mi em funciona correctament. 

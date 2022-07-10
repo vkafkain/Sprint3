@@ -6,7 +6,7 @@ He intentat treure els callbacks i modulat el codi a trossos perquè sigui més 
 
 Per executar el programa introduirem el següent comandament per consola:
 
-node callback_hell.js
+    node callback_hell.js
 
 ## Actualitzacions introduïdes: ✅
 

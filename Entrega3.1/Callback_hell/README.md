@@ -15,9 +15,7 @@ Actualitzacions introduides:
 - Hem introduit la següent linea de codi:
 
         const ruta = './outbox';
-        if (!fs.existsSync(ruta)){
-        fs.mkdirSync(ruta);
-        }
+        !fs.existsSync(ruta) ? fs.mkdirSync(ruta): console.log("Ja existeix la carpeta amb aquest nom"); 
 
 
 

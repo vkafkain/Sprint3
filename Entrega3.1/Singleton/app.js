@@ -76,4 +76,3 @@ joc.mostrarGuanyador('diabloIII');
 console.log('\x1b[36m ********GUANYADOR DIABLO IV******** \x1b[0m');
 joc.mostrarGuanyador('diabloIV');
 
-

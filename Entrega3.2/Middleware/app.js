@@ -14,12 +14,9 @@ middleware.use((dades, next) => {
     next();
 })
 
-console.log(`El resultat de la suma és ${calculadora.suma(input)}`);
+/* console.log(`El resultat de la suma és ${calculadora.suma(input)}`);
 console.log(`El resultat de la resta és ${calculadora.resta(input)}`);
-console.log(`El resultat de la multiplicació és ${calculadora.multiplicacio(input)}`);
-
-
-
+console.log(`El resultat de la multiplicació és ${calculadora.multiplicacio(input)}`); */
 
 
 /* app.suma(data);

@@ -1,6 +1,7 @@
 class Middleware {
     constructor(target) {
         this.middlewares = [];
+        this.target = target;
         this.req = {}; 
 
         const prototype = Object.getPrototypeOf(this.target);

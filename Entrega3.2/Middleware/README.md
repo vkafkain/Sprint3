@@ -2,7 +2,9 @@
 
 ## Instruccions d'ús: 🧙‍♂️
 
-Recordar a l'hora de llegir el arxiu Json mira el tema ruta de navegacio de carpetes __dirname
+Per executar el programa introduirem el següent comandament per terminal:
+
+    node app.js
 
 ## Referencies
 

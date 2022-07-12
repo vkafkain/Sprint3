@@ -1,24 +1,32 @@
-
 class Middleware {
-    constructor(){
-        this.middlewares = [];   
-    }
-    use(fn){
-        this.middlewares.push(fn);
-    };
-    executeMiddleware(data, done) {
-        this.middlewares.reduceRight((done, next) => () => next(data, done), done)
-            (data);
-    }
-    run(fun) {
-        this.use(fun)
-        this[fun] = args => {
-            this.data = args
-            console.log(args);
-            this.executeMiddleware(data, done => fun(args));
+    constructor(target) {
+        this.middlewares = [];
+        this.req = {}; 
+
+        const prototype = Object.getPrototypeOf(this.target);
+        const propertyNames = Object.getOwnPropertyNames(prototype);
+        for (let property of propertyNames) {
+            if(property !== "constructor") {
+                this[property] = (args) => {
+                    this.req = {...args};
+                    this.ejecutarMiddleware(0);
+                    return prototype[property].call(this, this.req);
+                }
+            }
         }
-    }
+    }    
+
+    ejecutarMiddleware(index) {
+        if (index < (this.middlewares.length-1)) {
+            this.middlewares[index].call(this, this.req, () => this.ejecutarMiddleware(index+1));
+        } else if (index = (this.middlewares.length-1)) {
+            this.middlewares[index].call(this, this.req, () => {});
+        }       
+    }   
+
+    use (funcion) {
+        this.middlewares.push(funcion);
+    }    
 }
+
 module.exports = Middleware;
-
-

@@ -1,4 +1,4 @@
-# Entrega 3.2: Patterns 2 Middleware ✨
+# Entrega 3.2: Patterns 2 Middleware 🧪
 
 ## Instruccions d'ús: 🧙‍♂️
 

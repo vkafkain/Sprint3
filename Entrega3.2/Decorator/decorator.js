@@ -6,3 +6,6 @@
 
 //TODO aplicant diferents conversions que usin el Decorator del punt anterior
 
+function conversioDivises() {
+    
+};

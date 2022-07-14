@@ -6,6 +6,7 @@ Per executar el programa introduirem el següent comandament per terminal:
 
     node app.js
 
+
 ## Referencies
 
 https://stackoverflow.com/questions/25319453/javascript-function-decorator-design-pattern

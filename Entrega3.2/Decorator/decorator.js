@@ -1,11 +1,13 @@
-//TODO arxiu que retorni una funcio(decorator)
+const conversio = require('./currency_conversion.json');
 
-//TODO funcio(decorator) efectua una conversio de moneda a euros multiplicant pel coeficient de conversió del fitxet adjunt en funció de la divisa original
-
-//TODO crea aplicació que calculi el cost d'uns quants Articles en euros a partir de les seves divises inicial
-
-//TODO aplicant diferents conversions que usin el Decorator del punt anterior
-
-function conversioDivises() {
+function convertir(producte) {
+    const divises = Object.keys(conversio);
+    const coincidencia = divises.find(divisa => divisa.slice(0, 3) === producte.divisa);
+    let preuEuros = producte.preu * conversio[coincidencia];
     
-};
+    let conversioFinal = console.log(`${producte.nom} amb un preu de ${producte.preu} ${producte.divisa} convertir a ${preuEuros.toFixed(2)} EUR`);
+    
+    return conversioFinal;
+}
+
+module.exports = convertir;

@@ -12,7 +12,7 @@ class Subscriber {
                     throw err;
                 }
                 
-                let queue = 'hello';
+                let queue = 'cola1';
 
                 channel.assertQueue(queue, {
                     durable: false

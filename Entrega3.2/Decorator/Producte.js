@@ -1,4 +1,3 @@
-
 class Producte {
     constructor(nom, preu, divisa) {
         this.nom = nom;

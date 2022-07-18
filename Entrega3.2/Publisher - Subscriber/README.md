@@ -4,7 +4,13 @@
 
 Per executar el programa introduirem el següent comandament per terminal:
 
-    node app.js
+Per enviar missatge a la cua:
+
+    node Publisher.js
+
+Per rebre el missatge de la cua: 
+
+    node Subscriber.js
 
 ## Que necesitem per fer-lo funcionar? 🧞
 

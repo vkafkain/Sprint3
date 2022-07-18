@@ -27,10 +27,6 @@ middleware.use((data, next) => {
     next();
 });
 
-
-
-
-
 console.log('\x1b[34m ********INFORMACIÓ JSON******** \x1b[0m');
 console.log(`Els números que rebem des del JSON són el ${input.num1} i ${input.num2}`);
 console.log('\x1b[34m ********OPERACIONS BÀSIQUES******** \x1b[0m');

@@ -30,5 +30,5 @@ A la pàgina de tutorials de rabbitmq hi ha un exemple perfecte de com funciona 
 
 
 
-[^1]: "RabbitMQ es un broker de mensajería de código abierto, distribuido y escalable, que sirve como intermediario para la comunicación eficiente entre productores y consumidores."
+[^1]: "RabbitMQ es un broker de mensajería de código abierto, distribuido y escalable, que sirve como intermediario para la comunicación eficiente entre productores y consumidores." https://www.pragma.com.co/academia/lecciones/conozcamos-sobre-rabbitmq-sus-componentes-y-beneficios
 

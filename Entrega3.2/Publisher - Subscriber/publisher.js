@@ -18,3 +18,10 @@ amqp.connect('amqp://localhost', function(err, connection) {
     console.log(` [x] Enviat ${msg}`);
     });
 });
+
+setTimeout(function() {
+    connection.close();
+    process.exit(0);
+}, 500);
+
+

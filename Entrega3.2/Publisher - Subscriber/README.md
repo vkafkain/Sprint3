@@ -32,4 +32,8 @@ Per instal·lar el mòdul introduirem per terminal:
 
 https://www.rabbitmq.com/tutorials/tutorial-one-javascript.html
 
-[^1]: A la pàgina de tutorials de RabbitMQ hi ha un exemple perfecte de com funciona RabbitMQ, és força estrany trobar tan bona documentació i exemples d'un programa.
+A la pàgina de tutorials de RabbitMQ hi ha un exemple perfecte de com funciona RabbitMQ, és força estrany trobar tan bona documentació i exemples d'un programa.
+
+[^1]: RabbitMQ es un software que actúa como Message Broker o lo que quiere decir lo mismo, el lugar donde publicamos mensajes cuando queremos tener comunicación asíncrona en nuestra aplicación.
+RabbitMQ también nos permite administrar colas, las cuales funcionan como las colas de las colecciones de .NET.
+https://www.netmentor.es/entrada/rabbitmq-comunicacion-asincrona#mcetoc_1fpq96bkrclm

@@ -32,4 +32,4 @@ Per instal·lar el mòdul introduirem per terminal:
 
 https://www.rabbitmq.com/tutorials/tutorial-one-javascript.html
 
-A la pàgina de tutorials de RabbitMQ hi ha un exemple perfecte de com funciona RabbitMQ, és força estrany trobar tan bona documentació i exemples d'un programa.
+[^1] A la pàgina de tutorials de RabbitMQ hi ha un exemple perfecte de com funciona RabbitMQ, és força estrany trobar tan bona documentació i exemples d'un programa.

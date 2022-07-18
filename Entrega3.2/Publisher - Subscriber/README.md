@@ -8,33 +8,28 @@ Per enviar missatge a la cua:
 
     node Publisher.js
 
-Per rebre el missatge de la cua: 
+Per rebre el missatge de la cua:
 
     node Subscriber.js
 
-## Que necesitem per fer-lo funcionar? 🧞
+## Què necessitem per fer-lo funcionar? 🧞
 
-Primer de tot em de instalar Rabbitmq[^1], el podem trovar a la seva pàgina oficial: 
+Primer de tot hem d'instal·lar Rabbitmq[^1], el podem trobar a la seva pàgina oficial:
 
 [Windows](https://www.rabbitmq.com/install-windows.html'🪟')
 [macOs](https://www.rabbitmq.com/install-homebrew.html'🍏')
 [Linux](https://www.rabbitmq.com/install-debian.html'👽')
 
-D'altra banda també em de instal·lar un modul especific, en aquest cas es el recomanat pels creadors de rabbitmq, amqplib:
+D'altra banda, també hem d'instal·lar un mòdul específic, en aquest cas és el recomanat pels creadors de RabbitMQ, amqplib:
 
 https://www.npmjs.com/package/amqplib
 
-Per instal·lar el modul introduirem per terminal: 
+Per instal·lar el mòdul introduirem per terminal:
 
     npm install amqplib
 
-## Referencies
+## Referències
 
-https://www.rabbitmq.com/tutorials/tutorial-one-javascript.html 
+https://www.rabbitmq.com/tutorials/tutorial-one-javascript.html
 
-A la pàgina de tutorials de rabbitmq hi ha un exemple perfecte de com funciona rabbitmq, és força extrany trobar tan bona documentació i exemples d'un programa.
-
-
-
-[^1]: "RabbitMQ es un broker de mensajería de código abierto, distribuido y escalable, que sirve como intermediario para la comunicación eficiente entre productores y consumidores." https://www.pragma.com.co/academia/lecciones/conozcamos-sobre-rabbitmq-sus-componentes-y-beneficios
-
+A la pàgina de tutorials de RabbitMQ hi ha un exemple perfecte de com funciona RabbitMQ, és força estrany trobar tan bona documentació i exemples d'un programa.

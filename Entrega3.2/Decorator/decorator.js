@@ -1,6 +1,5 @@
 const conversio = require('./currency_conversion.json');
 
-
 function convertir(producte) {
     const divises = Object.keys(conversio);
     const coincidencia = divises.find(divisa => divisa.slice(0, 3) === producte.divisa);

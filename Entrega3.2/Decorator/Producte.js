@@ -6,4 +6,5 @@ class Producte {
         this.divisa = divisa;
     }
 }
+
 module.exports = Producte

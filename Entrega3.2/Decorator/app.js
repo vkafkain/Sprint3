@@ -8,7 +8,6 @@ let cameraSony = new Producte('Sony EMC291', 100000, 'JPY');
 let samsungTV = new Producte('Samsung UE40J5000', 2000, 'CAD');
 let iphoneX = new Producte('Iphone X', 10200, 'CNY');
 
-
 conversor(nintendoSwitch);
 conversor(playstation4);
 conversor(xboxOne);

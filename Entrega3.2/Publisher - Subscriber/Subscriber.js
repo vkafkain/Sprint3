@@ -30,4 +30,5 @@ class Subscriber {
     }
 }
 
-module.exports = Subscriber;
+const valeria = new Subscriber();
+valeria.rebreMissatge('cola1');

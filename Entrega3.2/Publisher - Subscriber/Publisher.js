@@ -24,5 +24,7 @@ class Publisher {
     }
 }
 
-module.exports = Publisher
+const claudia = new Publisher();
+claudia.enviarMissatge(`Estic enviant un missatge per testejar Rabbitmq`);
+claudia.enviarMissatge(`Perdó que no havia saludat, bon dia!!`);
 

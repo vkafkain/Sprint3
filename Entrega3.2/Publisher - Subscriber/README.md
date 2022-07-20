@@ -1,16 +1,5 @@
 # Entrega 3.2: Publisher - Subscriber 🔊
 
-## Instruccions d'ús: 🧙‍♂️
-
-Per executar el programa introduirem el següent comandament per terminal:
-
-Per enviar missatge a la cua:
-
-    node Publisher.js
-
-Per rebre el missatge de la cua:
-
-    node Subscriber.js
 
 ## Què necessitem per fer-lo funcionar? 🧞
 
@@ -28,6 +17,18 @@ Per instal·lar el mòdul introduirem per terminal:
 
     npm install amqplib
 
+## Instruccions d'ús: 🧙‍♂️
+
+Per executar el programa introduirem el següent comandament per terminal:
+
+Per enviar missatge a la cua:
+
+    node Publisher.js
+
+Per rebre el missatge de la cua:
+
+    node Subscriber.js
+    
 ## Referències
 
 https://www.rabbitmq.com/tutorials/tutorial-one-javascript.html
